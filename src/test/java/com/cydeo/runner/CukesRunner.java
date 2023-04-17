@@ -11,10 +11,13 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         } ,
-        features = "src/test/resources/features" ,
+        features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions" ,
-        dryRun = false , // dryRun = true --> do not run my step_definitions, but only check if any step is missing snippet; = false --> this will turn off dryRun and our code will run as expected
-        tags = "@wip"
+        dryRun = false , // dryRun = true --> do not run my step_definitions,
+        // but only check if any step is missing snippet;
+        // = false --> this will turn off dryRun and our code will run as expected
+        tags = "@regression",
+        publish = false
 )
 public class CukesRunner {
 }
